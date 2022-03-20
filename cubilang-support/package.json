@@ -1,0 +1,25 @@
+{
+    "name": "cubilang-support",
+    "displayName": "CubiLang Support",
+    "description": "Adds CubiLang Support to VS-Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cubi",
+            "aliases": ["cubi", "cubi"],
+            "extensions": [".cub"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cubi",
+            "scopeName": "source.cub",
+            "path": "./syntaxes/cubi.tmLanguage.json"
+        }]
+    }
+}

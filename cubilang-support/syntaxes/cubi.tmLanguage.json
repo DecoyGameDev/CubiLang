@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cubi",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#printcmd"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cubi",
+				"match": "\\b(cub=if|whl|forWhen|System|prntout|floating|ISflase|IStrue|glbl|lib|graphics.cubil|merry.cubl|node.cubl|output.cubl|global|closed|public|class|hidden|graphics.create|graphics.destroy|graphics.text|unoutput|IO|READ|WRITE|file|=|add|sub|dest|deleteint|==|--|!!!|int|bool|float|numb|define|data|v|^)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cubi",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cubi",
+					"match": "\\\\."
+				}
+			]
+		},
+		"printcmd": {
+			"name": "prnt.lang.cubi",
+			"begin": "prnt",
+			"end": "prnt",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cubi",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.cub"
+}
