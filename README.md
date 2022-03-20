@@ -13,7 +13,7 @@ cub=if|whl|forWhen|System|prntout|floating|ISflase|IStrue|glbl|lib|graphics.cubi
 
 # Hello World Example (yikes)
 
-`
+```
 lib{
     output.cubl
 }
@@ -45,4 +45,5 @@ numb{
     int 1
     int 0
     {define bool}
-}`
+}
+```
